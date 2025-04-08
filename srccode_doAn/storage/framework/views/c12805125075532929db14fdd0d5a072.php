@@ -1,0 +1,1 @@
+<?php /**PATH D:\doAnBe2\srccode_doAn\resources\views/crud_user/create.blade.php ENDPATH**/ ?>
