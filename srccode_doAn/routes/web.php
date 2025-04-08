@@ -2,11 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CrudUserController;
-<<<<<<< HEAD
-=======
 use App\Http\Controllers\UserCrudController;
-
->>>>>>> template
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +15,7 @@ use App\Http\Controllers\UserCrudController;
 |
 */
 
-<<<<<<< HEAD
+
 Route::get('dashboard', [CrudUserController::class, 'dashboard']);
 
 Route::get('login', [CrudUserController::class, 'login'])->name('login');
@@ -38,7 +34,7 @@ Route::post('update', [CrudUserController::class, 'postUpdateUser'])->name('user
 Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
 
 Route::get('signout', [CrudUserController::class, 'signOut'])->name('signout');
-=======
+
 //Route::get('dashboard', [CrudUserController::class, 'dashboard']);
 
 //Route::get('login', [CrudUserController::class, 'login'])->name('login');
@@ -61,14 +57,14 @@ Route::get('signout', [CrudUserController::class, 'signOut'])->name('signout');
 
 
 //route do an
-Route::get('users', [UserCrudController::class, 'index'])->name('users.index');
+Route::get('/users', [UserCrudController::class, 'index'])->name('users.index');
 Route::get('UserCreate', [UserCrudController::class, 'create'])->name('users.UserCreate');
 Route::post('users', [UserCrudController::class, 'postUser'])->name('users.store');
 Route::get('/users/{id}/edit', [UserCrudController::class, 'editUser'])->name('users.editUser');
 Route::delete('/users/{id}/delete', [UserCrudController::class, 'deleteUser'])->name('users.deleteUser');
 Route::put('/users/{id}', [UserCrudController::class, 'updateUser'])->name('users.updateUser');
 
->>>>>>> template
+
 
 Route::get('/', function () {
     return view('welcome');
